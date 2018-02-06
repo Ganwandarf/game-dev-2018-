@@ -1,0 +1,101 @@
+<input type=button value="If x>6" onclick="{
+myTemp=''
+x=8
+if(x>6){myTemp='larger than 6'}
+    else{myTemp='less than 6'}
+
+document.getElementById('myDiv01').innerHTML = myTemp
+
+}">
+
+<div id="myDiv01" ></div>
+
+
+<input type=button value="If x==6" onclick="{
+myTemp=''
+x=5
+if(x==6){myTemp='larger than 6'}
+    else{myTemp='less than 6'}
+
+document.getElementById('myDiv02').innerHTML = myTemp
+
+}">
+
+<div id="myDiv02" ></div>
+
+
+<input type=button value="If x>=6" onclick="{
+myTemp=''
+x=8
+if(x>=6){myTemp='larger than 6'}
+    else{myTemp='less than 6'}
+
+document.getElementById('myDiv03').innerHTML = myTemp
+
+}">
+
+<div id="myDiv03" ></div>
+
+
+<input type=button value="If x<6" onclick="{
+myTemp=''
+x=5
+if(x<6){myTemp='less than 6'}
+    else{myTemp='larger than 6'}
+
+document.getElementById('myDiv04').innerHTML = myTemp
+
+}">
+
+<div id="myDiv04" ></div>
+
+
+<input type=button value="If x<6 and x>6" onclick="{
+myTemp=''
+x=5
+if(x<6)&&(x=>6){myTemp='larger than 6'}
+
+document.getElementById('myDiv05').innerHTML = myTemp
+
+}">
+
+<div id="myDiv05" ></div>
+
+
+<input type=button value="If x<6 or x>6" onclick="{
+myTemp=''
+x=5
+if(x<6)||(x>6){myTemp='larger than 6'}
+    else{myTemp='less than 6'}
+
+document.getElementById('myDiv06').innerHTML = myTemp
+
+}">
+
+<div id="myDiv06" ></div>
+
+
+<input type=button value="If x<6 not x>6" onclick="{
+myTemp=''
+x=5
+if(x<6)|(x>6){myTemp='larger than 6'}
+    else{myTemp='less than 6'}
+
+document.getElementById('myDiv07').innerHTML = myTemp
+
+}">
+
+<div id="myDiv07" ></div>
+
+
+<input type=button value="If x>6 or x>3" onclick="{
+myTemp=''
+x=7
+if(x>6){myTemp='larger than 6<br>'}
+if(x>3){myTemp='larger than 3<br>'}
+
+document.getElementById('myDiv08').innerHTML = myTemp
+
+}">
+
+<div id="myDiv08" ></div>
