@@ -120,10 +120,17 @@ document.getElementById('myDiv10').innerHTML = myTemp
 <div id="myDiv10" ></div>
 
 
-<input type=button value="Textbox"   onclick="{
+x=<input id="myText01" type=text value=6><br> 
   
-  document.getElementById('myDiv04').innerHTML  +=  '<input id=\'myText01\' type=text  value=Fred><br>'
+  
+<input type=button value="Test if x>6" onclick="{
+myTemp=''
+x=document.getElementById('myText01').value
+if(x>6){myTemp='larger than 6'}
+    else{myTemp='less than 6'}
+
+  document.getElementById('myDiv11').innerHTML = myTemp
 
 }">
 
-<div id="myDiv11"  ></div>
+<div id="myDiv11" ></div>
