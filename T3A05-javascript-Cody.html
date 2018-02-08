@@ -92,10 +92,10 @@ document.getElementById('myDiv07').innerHTML = myTemp
 <div id="myDiv07" ></div>
 
 
-<input type=button value="If x>6 or x>3" onclick="{
+<input type=button value="If x<3 or x>3" onclick="{
 myTemp=''
 x=document.getElementById('myText01').value
-if(x>6){myTemp='larger than 6<br>'}
+if(x<3){myTemp='less than 20<br>'}
 if(x>3){myTemp='larger than 3<br>'}
 
 document.getElementById('myDiv08').innerHTML = myTemp
@@ -105,11 +105,11 @@ document.getElementById('myDiv08').innerHTML = myTemp
 <div id="myDiv08" ></div>
 
 
-<input type=button value="If x>6 and x<7" onclick="{
+<input type=button value="If x>10" onclick="{
 myTemp=''
 x=document.getElementById('myText01').value
-if(x>6){myTemp='larger than 6'}
-else if(x<7){myTemp='less than 7'}
+if(x>10){myTemp='larger than 10'}
+    else{myTemp='less than 10'}
 
 document.getElementById('myDiv10').innerHTML = myTemp
 
