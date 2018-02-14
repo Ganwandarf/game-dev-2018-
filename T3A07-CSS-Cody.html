@@ -1,5 +1,63 @@
+<style>
+body {
+    color: red;
+}
+
+h1 {
+    color: #00ff00;
+}
+
+p.ex {
+    color: rgb(0,0,255);
+}
+</style>
+
+
 <h1 align=center>CSS by Cody</h1>
+
+<div id="myDiv01" style="position:absolute; left:200; top:10;">Fred</div>
+
+3 links to references and at least 8 other CSS commands on this page<br>
 
 <a href="https://www.w3schools.com/cssref/">w3schools.com/cssref</a><br>
 <a href="https://www.w3.org/Style/Examples/011/firstcss.en.html">w3.org/Style/Examples/011/firstcss.en</a><br>
 <a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">learn.shayhowe.com/html-css/getting-to-know-css</a><br>
+
+
+<input type=button value=clickme style="background-color:blue; color:yellow;" onclick="{ 
+    alert('it works')
+}">
+
+<p>Regular paragraph</p>
+<p class="ex">This is a paragraph with class="ex". This text is blue.</p>
+
+
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: myfirst 3s 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 3s 2;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 250px; top: 90px;}
+    50%  {background: blue; left: 210px; top: 700px;}
+    75%  {background: green; left: 80px; top: 250px;}
+    100% {background: red; left: 40px; top: 36px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 250px; top: 90px;}
+    50%  {background: blue; left: 210px; top: 700px;}
+    75%  {background: green; left: 80px; top: 250px;}
+    100% {background: red; left: 40px; top: 36px;}
+}
+</style>
