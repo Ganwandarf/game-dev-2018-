@@ -2,9 +2,52 @@
 
 <input type=button value="Go Right" onclick="{
 
-     document.getElementById('myDiv01').style.left= '200px'
+     document.getElementById('myDiv01').style.left=  parseInt(document.getElementById('myDiv01').style.left) + 6
+       
 
 
 }">
 
-<div id="myDiv01" style="position:absolute;" >Cody</div><br>
+<div id="myDiv01" style="position:absolute; left:200px"; top:10px >Cody</div><br>
+
+<input type=button value="Go Left" onclick="{
+
+     document.getElementById('myDiv02').style.left=  parseInt(document.getElementById('myDiv02').style.left) - 6
+       
+
+
+}">
+
+<div id="myDiv02" style="position:absolute; left:600px"; top:50px >Cody</div><br>
+
+<input type=button value="Go Up" onclick="{
+
+     document.getElementById('myDiv03').style.top=  parseInt(document.getElementById('myDiv03').style.top) - 6
+       
+
+
+}">
+
+<div id="myDiv03" style="position:absolute; left:300px; top:100px" >Cody</div><br>
+
+<input type=button value="Go Down" onclick="{
+
+     document.getElementById('myDiv04').style.top=  parseInt(document.getElementById('myDiv04').style.top) + 6
+       
+
+
+}">
+
+<div id="myDiv04" style="position:absolute; left:800px; top:100px" >Cody</div><br>
+
+
+<input type=button value="Go Right" onclick="{
+
+     document.getElementById('myDiv05').style.left=  parseInt(document.getElementById('myDiv05').style.left) + 6
+     document.getElementById('myDiv05').style.top=  parseInt(document.getElementById('myDiv05').style.top) + 6
+       
+
+
+}">
+
+<div id="myDiv05" style="position:absolute; left:600px; top:150px" >Cody</div><br>
