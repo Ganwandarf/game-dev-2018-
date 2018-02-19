@@ -1,81 +1,35 @@
 <h2 align=center>Pixels by Cody</h2>
 
-<input type=button value="Go Right" onclick="{
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
 
-     document.getElementById('myDiv01').style.left=  parseInt(document.getElementById('myDiv01').style.left) + 6
-       
+td, th {
+    border: 4px solid #000000;
+    text-align: left;
+    padding: 6px;
+}
 
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
 
-}">
-
-<div id="myDiv01" style="position:absolute; left:200px"; top:10px ><img src="http://www.strongmindbraveheart.com/wp-content/uploads/Tigger-knees.jpg" height="100px" width="100px"></div><br>
-
-<input type=button value="Go Left" onclick="{
-
-     document.getElementById('myDiv02').style.left=  parseInt(document.getElementById('myDiv02').style.left) - 6
-       
-
-
-}">
-
-<div id="myDiv02" style="position:absolute; left:600px"; top:50px >insert random div thing</div><br>
-
-<input type=button value="Go Up" onclick="{
-
-     document.getElementById('myDiv03').style.top=  parseInt(document.getElementById('myDiv03').style.top) - 6
-       
-
-
-}">
-
-<div id="myDiv03" style="position:absolute; left:300px; top:100px" >Tiggers bounce</div><br>
-
-<input type=button value="Go Down" onclick="{
-
-     document.getElementById('myDiv04').style.top=  parseInt(document.getElementById('myDiv04').style.top) + 6
-       
-
-
-}">
-
-<div id="myDiv04" style="position:absolute; left:800px; top:100px" >Oh bother</div><br>
-
-
-<input type=button value="Go RightDown" onclick="{
-
-     document.getElementById('myDiv05').style.left=  parseInt(document.getElementById('myDiv05').style.left) + 6
-     document.getElementById('myDiv05').style.top=  parseInt(document.getElementById('myDiv05').style.top) + 6
-       
-
-
-}">
-
-<div id="myDiv05" style="position:absolute; left:600px; top:150px" >I'm forgetful and an owl</div><br>
-
-
-<input type=button value="Go RightUp" onclick="{
-
-     document.getElementById('myDiv06').style.left=  parseInt(document.getElementById('myDiv06').style.left) + 6
-     document.getElementById('myDiv06').style.top=  parseInt(document.getElementById('myDiv06').style.top) - 6
-       
-
-
-}">
-
-<div id="myDiv06" style="position:absolute; left:650px; top:200px" >insert winnie the pooh quote</div><br>
-
-<input type=button value="Go LeftDown" onclick="{
-
-     document.getElementById('myDiv07').style.left=  parseInt(document.getElementById('myDiv07').style.left) - 6
-     document.getElementById('myDiv07').style.top=  parseInt(document.getElementById('myDiv07').style.top) + 6
-       
-
-
-}">
-
-<div id="myDiv07" style="position:absolute; left:750px; top:180px" ><img src="http://www.strongmindbraveheart.com/wp-content/uploads/Winnie-the-pooh-characters-movie-photo-09-550x550.jpg" height="100px" width="100px"></div><br>
-
-<input type=button value="Go LeftUp" onclick="{
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td><input type=button value="Go LeftUp" onclick="{
 
      document.getElementById('myDiv08').style.left=  parseInt(document.getElementById('myDiv08').style.left) - 6
      document.getElementById('myDiv08').style.top=  parseInt(document.getElementById('myDiv08').style.top) - 6
@@ -85,14 +39,84 @@
 }">
 
 <div id="myDiv08" style="position:absolute; left:720px; top:150px" >Running out of clevver things to say</div><br>
+</td>
+    <td><input type=button value="Go Up" onclick="{
 
-<input type=button value="Go RightDown" onclick="{
-
-     document.getElementById('myDiv09').style.left=  parseInt(document.getElementById('myDiv09').style.left) + 6
-     document.getElementById('myDiv09').style.top=  parseInt(document.getElementById('myDiv09').style.top) + 6
+     document.getElementById('myDiv03').style.top=  parseInt(document.getElementById('myDiv03').style.top) - 6
        
 
 
 }">
 
-<div id="myDiv09" style="position:absolute; left:600px; top:150px" ><img src="http://www.strongmindbraveheart.com/wp-content/uploads/Winniethepooh.png" height="150px" width="100px"></div><br>
+<div id="myDiv03" style="position:absolute; left:300px; top:100px" >Tiggers bounce</div><br></td>
+    <td><input type=button value="Go RightUp" onclick="{
+
+     document.getElementById('myDiv06').style.left=  parseInt(document.getElementById('myDiv06').style.left) + 6
+     document.getElementById('myDiv06').style.top=  parseInt(document.getElementById('myDiv06').style.top) - 6
+       
+
+
+}">
+
+<div id="myDiv06" style="position:absolute; left:650px; top:200px" >insert winnie the pooh quote</div><br>
+</td>
+  </tr>
+  <tr>
+    <td><input type=button value="Go Left" onclick="{
+
+     document.getElementById('myDiv01').style.left=  parseInt(document.getElementById('myDiv01').style.left) - 6
+       
+
+
+}">
+
+<div id="myDiv01" style="position:absolute; left:500px"; top:60px ><img src="http://www.strongmindbraveheart.com/wp-content/uploads/Tigger-knees.jpg" height="100px" width="100px"></div><br></td>
+    <td></td>
+    <td><input type=button value="Go Right" onclick="{
+
+     document.getElementById('myDiv02').style.left=  parseInt(document.getElementById('myDiv02').style.left) + 6
+       
+
+
+}">
+
+<div id="myDiv02" style="position:absolute; left:600px"; top:50px >insert random div thing</div><br></td>
+  </tr>
+  <tr>
+    <td><input type=button value="Go LeftDown" onclick="{
+
+     document.getElementById('myDiv07').style.left=  parseInt(document.getElementById('myDiv07').style.left) - 6
+     document.getElementById('myDiv07').style.top=  parseInt(document.getElementById('myDiv07').style.top) + 6
+       
+
+
+}">
+
+<div id="myDiv07" style="position:absolute; left:750px; top:180px" ><img src="http://www.strongmindbraveheart.com/wp-content/uploads/Winnie-the-pooh-characters-movie-photo-09-550x550.jpg" height="100px" width="100px"></div><br>
+</td>
+    <td><input type=button value="Go Down" onclick="{
+
+     document.getElementById('myDiv04').style.top=  parseInt(document.getElementById('myDiv04').style.top) + 6
+       
+
+
+}">
+
+<div id="myDiv04" style="position:absolute; left:800px; top:100px" >Oh bother</div><br></td>
+    <td><input type=button value="Go RightDown" onclick="{
+
+     document.getElementById('myDiv05').style.left=  parseInt(document.getElementById('myDiv05').style.left) + 6
+     document.getElementById('myDiv05').style.top=  parseInt(document.getElementById('myDiv05').style.top) + 6
+       
+
+
+}">
+
+<div id="myDiv05" style="position:absolute; left:600px; top:150px" >I'm forgetful and an owl</div><br></td>
+  </tr>
+
+
+</table>
+
+</body>
+</html>
