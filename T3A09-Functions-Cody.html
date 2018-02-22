@@ -1,12 +1,18 @@
-<p id="demo"></p>
+<h2 align=center>Functions By Cody</h2>
+
 <script>
-var x=30;
+function myGuardian(myX){
+alert('Your '+ myX +' are dirty')
 
-var y=4000;
+}
 
-var z= x+y
 
-document.getElementById("demo").innerHTML =
-
-"The value of z is: " + z;
 </script>
+
+<input type=button value="Where are my socks?" onclick="{
+    myGuardian('socks')
+}">
+<br>
+<input type=button value="Where are my shoes?" onclick="{
+    myGuardian('shoes')
+}">
