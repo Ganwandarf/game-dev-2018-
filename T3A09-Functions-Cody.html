@@ -12,7 +12,15 @@ alert('Your '+ myX +' are dirty')
 <input type=button value="Where are my socks?" onclick="{
     myGuardian('socks')
 }">
+
 <br>
 <input type=button value="Where are my shoes?" onclick="{
     myGuardian('shoes')
+}">
+
+<br>
+<input type=button value="inline function" onclick="{
+    (function (){
+        alert('inline works')
+    })()
 }">
