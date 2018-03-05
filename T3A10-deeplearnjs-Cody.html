@@ -212,5 +212,31 @@ async function myTest01(){
 
 
 
-<div id="myDiv04">...</div><br>
+<div id="myDiv04"></div><br>
+
+<input id="myButton04" type="button" value="Mean Square Difference" onclick="{
+const math = dl.ENV.math
+                                                          
+math.scope((keep) => {
+  const a = dl.Array2D.new([2, 2], [1.0, 2.0, 3.0, 4.0]);
+  const b = dl.Array2D.new([2, 2], [0.0, 2.0, 4.0, 6.0]);
+                                                                           
+  // Non-blocking math calls.
+  const diff = math.sub(a, b);
+  const squaredDiff = math.elementWiseMul(diff, diff);
+  const sum = math.sum(squaredDiff);
+  const size = dl.Scalar.new(a.size);
+  const average = math.divide(sum, size);
+                                                                           
+  // Blocking call to actually read the values from average. Waits until the
+  // GPU has finished executing the operations before returning values.
+  // average is a Scalar so we use .get()
+  document.getElementById('myDiv05').innerHTML =  'The average = ' + average.get()
+});                                                          
+}">
+
+
+
+<div id="myDiv05"></div><br>
+
 
