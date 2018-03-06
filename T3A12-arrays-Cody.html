@@ -20,12 +20,6 @@ document.getElementById('myDiv01').innerHTML += myStuff[0] + myStuff[1] + myStuf
 
 <div id="myDiv01"></div>
 
-<input type=text id="myText01" value= 3><br>
-<input type=button value="Run myRandom" onclick="
-  alert()
-"><br>
-<div id="myDiv02"></div><br>
-
 <input type=button value="Run myStuff" onclick="
   //alert(Math.floor(Math.random()*9+1)  )
 
@@ -49,3 +43,22 @@ document.getElementById('myDiv03').innerHTML += myStuff[myLoop] + '<br>'
 "><br><br>
 
 <div id="myDiv03"></div>
+
+
+Loop this amount <input type=text id="myText01" size=6 value= 5><br>
+
+<input type=button value="Run myRandom" onclick="
+
+myRandomNumber = new Array()
+
+// you make a for loop here
+
+myRandomNumber[0] = Math.floor(Math.random()*9+1)
+
+// you make another for loop here
+
+document.getElementById('myDiv02').innerHTML += myRandomNumber[0] + ' <br>'
+
+"><br>
+
+<div id="myDiv02"></div>
