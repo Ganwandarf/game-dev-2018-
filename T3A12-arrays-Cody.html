@@ -49,15 +49,22 @@ Loop this amount <input type=text id="myText01" size=6 value= 5><br>
 
 <input type=button value="Run myRandom" onclick="
 
+myInput = document.getElementById('myText01').value
+
 myRandomNumber = new Array()
 
-// you make a for loop here
+ for(x=1; x<=myInput; x++){
 
-myRandomNumber[0] = Math.floor(Math.random()*9+1)
+myRandomNumber[x] = Math.floor(Math.random()*99+1)
+ 
+}
 
-// you make another for loop here
 
-document.getElementById('myDiv02').innerHTML += myRandomNumber[0] + ' <br>'
+document.getElementById('myDiv02').innerHTML = ''
+ for(x=1; x<=myInput; x++){
+document.getElementById('myDiv02').innerHTML += myRandomNumber[x] + ' <br>'
+
+}
 
 "><br>
 
