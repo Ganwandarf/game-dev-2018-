@@ -61,10 +61,40 @@ myRandomNumber[x] = Math.floor(Math.random()*99+1)
 
 document.getElementById('myDiv02').innerHTML = ''
  for(x=1; x<=myInput; x++){
+
 document.getElementById('myDiv02').innerHTML += myRandomNumber[x] + ' <br>'
 
-}
-
+  }
 "><br>
 
-<div id="myDiv02"></div>
+<div id="myDiv02"></div><br>
+
+
+Loop this amount <input type=text id="myText01" size=6 value= 5><br>
+
+<input type=button value="Run myRandom Loop" onclick="
+
+myInput = document.getElementById('myText01').value
+
+myRandomNumber = new Array()
+
+ for(x=1; x<=myInput; x++){
+
+myRandomNumber[x] = Math.floor(Math.random()*99+1)
+ 
+}
+
+document.getElementById('myDiv04').innerHTML = ''
+ for(x=1; x<=myInput; x++){
+ if(myRandomNumber[x]  > myRandomNumber[x + 1] ){
+     myTemp = myRandomNumber[x]
+     myTemp = myRandomNumber[x + 1]
+document.getElementById('myDiv04').innerHTML += myRandomNumber[x] + ' <br>'
+
+     }
+
+  }
+"><br>
+
+<div id="myDiv04"></div>
+
