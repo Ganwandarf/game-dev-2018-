@@ -70,30 +70,48 @@ document.getElementById('myDiv02').innerHTML += myRandomNumber[x] + ' <br>'
 <div id="myDiv02"></div><br>
 
 
-Loop this amount <input type=text id="myText01" size=6 value= 5><br>
+Loop this amount <input type=text id="myText02" size=6 value= 5><br>
 
 <input type=button value="Run myRandom Loop" onclick="
 
-myInput = document.getElementById('myText01').value
+myInput = document.getElementById('myText02').value
 
-myRandomNumber = new Array()
+ myRandomNumber = new Array()
 
- for(x=1; x<=myInput; x++){
-
-myRandomNumber[x] = Math.floor(Math.random()*99+1)
+  for(x=1; x<=myInput; x++){
+ myRandomNumber[x] = Math.floor(Math.random()*99+1)
  
 }
 
-document.getElementById('myDiv04').innerHTML = ''
+
+  
+ document.getElementById('myDiv04').innerHTML = ''
  for(x=1; x<=myInput; x++){
- if(myRandomNumber[x]  > myRandomNumber[x + 1] ){
-     myTemp = myRandomNumber[x]
-     myTemp = myRandomNumber[x + 1]
+    document.getElementById('myDiv04').innerHTML += myRandomNumber[x] + ' <br>'
+
+}
+
+
+ for(x=0; x<=myInput; x++){
+   for(x=0; x<=myInput; x++){
+   if(myRandomNumber[x]  > myRandomNumber[x + 1] ){
+      myTemp = myRandomNumber[x]
+        myRandomNumber[x] = myRandomNumber[x + 1]
+           myRandomNumber[x + 1] = myTemp
+     
 document.getElementById('myDiv04').innerHTML += myRandomNumber[x] + ' <br>'
 
      }
 
   }
+
+}
+document.getElementById('myDiv04').innerHTML += 'After Sorting' 
+for(x=0; x<=myInput; x++){
+document.getElementById('myDiv04').innerHTML += myRandomNumber[x] + ' <br>'
+
+
+
 "><br>
 
 <div id="myDiv04"></div>
