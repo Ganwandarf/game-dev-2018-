@@ -6,26 +6,36 @@
 
 function myCheckKeys(event){
 
-document.getElementById('myDiv01').innerHTML += String.fromCharCode
-
-(event.keyCode)
+document.getElementById('myDiv01').innerHTML += String.fromCharCode(event.keyCode)
 
 if (String.fromCharCode(event.keyCode) == 'A') {
 
-document.getElementById('myAnswer').value = parseFloat
-
-(document.getElementById('myInput1').value) +
-
-parseFloat
-
-(document.getElementById('myInput2').value)
+document.getElementById('myAnswer1').value = parseFloat(document.getElementById('myInput1').value) + parseFloat(document.getElementById('myInput2').value)
 
 }
 
-// YOUR if statements here
+if (String.fromCharCode(event.keyCode) == 'I') {
+
+document.getElementById('myAnswer2').value = parseInt(document.getElementById('myInput3').value) + parseInt(document.getElementById('myInput4').value)
 
 }
 
+if (String.fromCharCode(event.keyCode) == 'C') {
+
+document.getElementById('myAnswer3').value = String(document.getElementById('myInput5').value) + String(document.getElementById('myInput6').value)
+
+}
+
+
+if (String.fromCharCode(event.keyCode) == 'S') {
+
+document.getElementById('myAnswer4').value = String(document.getElementById('myInput7').value) + String(document.getElementById('myInput8').value)
+
+}
+
+
+
+}
 </script>
 
 <body onKeyDown="{myCheckKeys(event)}">
@@ -38,7 +48,30 @@ A floating point number
 
 <input id="myInput2" type=text value=3.14> =
 
-<input id="myAnswer" type=text ><br>
+<input id="myAnswer1" type=text ><br>
+
+
+<input id="myInput3" type=text value=3>
+
+<input id="myInput4" type=text value=3> =
+
+<input id="myAnswer2" type=text ><br>
+
+
+<input id="myInput5" type=text value=H>
+
+<input id="myInput6" type=text value=I> =
+
+<input id="myAnswer3" type=text ><br>
+
+
+<input id="myInput7" type=text value='I love'>
+
+<input id="myInput8" type=text value=' pie'> = 
+
+<input id="myAnswer4" type=text ><br>
+
+
 
 Type "A" to ADD them. You make text box for I = Integers,
 
