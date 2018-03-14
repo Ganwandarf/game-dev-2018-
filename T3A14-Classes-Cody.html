@@ -1,0 +1,73 @@
+<h2 align= center>Classes by Cody</h2>
+
+
+Make a class called myClass with properties myName and myAge that are passed into a constructor. Needs one method that puts Name+Age into div.<br>
+
+<script>
+
+class myClass {
+  constructor(passName, passAge, passType) {
+      this.myName = passName;
+      this.myAge = passAge;
+      this.myType = passType;
+
+  }
+
+  myShow1(){
+    document.getElementById('myDiv01').innerHTML += 'Hello '+ this.myName + '<br>' + this.myAge + '<br>' + this.myType + '<br>'
+  
+  }
+
+  myShow2(){
+    document.getElementById('myDiv02').innerHTML += 'Hello '+ this.myName + '<br>' + this.myAge + '<br>' + this.myType + '<br>'
+
+      }
+
+  myShow3(){
+    document.getElementById('myDiv03').innerHTML +=  this.myName + '<br>' + this.myAge + '<br>' + this.myType + '<br>'
+
+      }
+
+  }
+
+
+</script>
+
+<input type=button value="Activate Dog?" onclick="{
+
+   myDog = new myClass('Snickers', 'age: 5', 'Dog')
+   myDog.myShow1()
+
+
+}"><br>
+
+<div id="myDiv01"><br></div><br>
+
+
+
+<input type=button value="Activate Cat?" onclick="{
+
+myCat = new myClass('Purrfect', 'age: 3', 'Cat')
+   myCat.myShow2()
+
+}"><br>
+
+<div id="myDiv02"><br></div><br>
+
+<input type=button value="Array of Pets?" onclick="{
+
+myPets = new Array()
+myPets[0] = new myClass('Sweetie', 'age: 3', 'Puppy')
+myPets[1] = new myClass('Charles', 'age: 9', 'Cat')
+myPets[2] = new myClass('Chirpy', 'age: 6', 'Bird')
+myPets[3] = new myClass('Bugs', 'age: 78', 'Bunny')
+myPets[4] = new myClass('Nemo', 'age: 7', 'Fish')
+
+ for(x=0; x<=5; x++){
+   myPets[x].myShow3()
+
+}
+
+}"><br><br>
+
+<div id="myDiv03"></div>
