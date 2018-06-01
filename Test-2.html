@@ -1,4 +1,4 @@
-
+ 
 
 <html>
 
@@ -214,11 +214,15 @@ document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 2'
 
 document.getElementById('bullet1').style.visibility = 'hidden'
 
-document.getElementById('bullet1').style.left = '-200px'
+document.getElementById('bullet1').style.left = '900px'
 
-document.getElementById('move2').style.visibility = 'hidden'
+//document.getElementById('move2').style.visibility = 'hidden'
 
-document.getElementById('move2').style.left = '9000px'
+myDead2True = false
+
+document.mySpeedX2 = 0
+
+document.getElementById('move2').style.left = '-9000px'
 
 clearInterval(document.myShot)
 
@@ -230,11 +234,15 @@ document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 3'
 
 document.getElementById('bullet1').style.visibility = 'hidden'
 
-document.getElementById('bullet1').style.left = '-200px'
+document.getElementById('bullet1').style.left = '-900px'
 
-document.getElementById('move3').style.visibility = 'hidden'
+//document.getElementById('move3').style.visibility = 'hidden'
 
-document.getElementById('move3').style.left = '9000px'
+document.getElementById('move3').style.left = '-9000px'
+
+myDead3True = false
+
+document.mySpeedX3 = 0
 
 clearInterval(document.myShot)
 
@@ -247,11 +255,15 @@ document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 4'
 
 document.getElementById('bullet1').style.visibility = 'hidden'
 
-document.getElementById('bullet1').style.left = '-200px'
+document.getElementById('bullet1').style.left = '900px'
 
-document.getElementById('move4').style.visibility = 'hidden'
+//document.getElementById('move4').style.visibility = 'hidden'
 
-document.getElementById('move4').style.left = '9000px'
+myDead4True = false
+
+document.mySpeedX4 = 0
+
+document.getElementById('move4').style.left = '-9000px'
 
 clearInterval(document.myShot)
 
@@ -264,11 +276,15 @@ document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 5'
 
 document.getElementById('bullet1').style.visibility = 'hidden'
 
-document.getElementById('bullet1').style.left = '-200px'
+document.getElementById('bullet1').style.left = '900px'
 
-document.getElementById('move5').style.visibility = 'hidden'
+//document.getElementById('move5').style.visibility = 'hidden'
 
-document.getElementById('move5').style.left = '9000px'
+myDead5True = false
+
+document.mySpeedX5 = 0
+
+document.getElementById('move5').style.left = '-9000px'
 
 clearInterval(document.myShot)
 
@@ -281,13 +297,19 @@ document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 6'
 
 document.getElementById('bullet1').style.visibility = 'hidden'
 
-document.getElementById('move6').style.visibility = 'hidden'
+//document.getElementById('move6').style.visibility = 'hidden'
 
-document.getElementById('move6').style.left = '-400px'
+document.getElementById('move6').style.left = '-9000px'
 
-document.getElementById('bullet1').style.left = '9000px'
+myDead6True = false
+
+document.mySpeedX6 = 0
+
+document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
+
+
 
 }
 
@@ -297,9 +319,11 @@ document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 7'
 
 document.getElementById('bullet1').style.visibility = 'hidden'
 
-document.getElementById('bullet1').style.left = '-200px'
+document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
+
+
 
 }
 
@@ -319,7 +343,7 @@ document.mySpeedX2 = 10;
 
 document.mySpeedX3 = 20;
 
-document.mySpeedX4 = 0;
+document.mySpeedX4 = 1;
 
 document.mySpeedX5 = 5;
 
@@ -327,7 +351,7 @@ document.mySpeedX6 = 20;
 
 document.mySpeedX7 = 11;
 
-document.mySpeedX8 = 1;
+document.mySpeedX8 = 5;
 
 document.mySpeedX9 = 7;
 
@@ -349,15 +373,25 @@ document.mySpeedX17 = 18;
 
 document.mySpeedX18 = 5;
 
-document.mySpeedX19 = 0;
+document.mySpeedX19 = 3;
 
 
+myDead2True = true
 
+myDead3True = true
+
+myDead4True = true
+
+myDead5True = true
+
+myDead6True = true
 
 
 
 function myAuto(){
 
+
+if (myDead2True){
 
 if(parseInt(document.getElementById('move2').style.left) > '2000' ){
 
@@ -372,9 +406,15 @@ if(parseInt(document.getElementById('move2').style.left) < '300' ){
 
               }
 
+
+}
+
 document.getElementById('move2').style.left = parseInt(document.getElementById('move2').style.left)+document.mySpeedX2+'px'
 
 
+
+
+if (myDead3True){
 
 if(parseInt(document.getElementById('move3').style.left) > '2000' ){
 
@@ -389,12 +429,14 @@ if(parseInt(document.getElementById('move3').style.left) < '300' ){
 
               }
 
-
-
+}
 
 document.getElementById('move3').style.left = parseInt(document.getElementById('move3').style.left)+document.mySpeedX3+'px'
 
 
+
+
+if (myDead4True){
 
 if(parseInt(document.getElementById('move4').style.left) > '2000' ){
 
@@ -411,9 +453,14 @@ if(parseInt(document.getElementById('move4').style.left) < '500' ){
 
 
 
+}
 
 document.getElementById('move4').style.left = parseInt(document.getElementById('move4').style.left)+document.mySpeedX4+'px'
 
+
+
+
+if (myDead5True){
 
 
 if(parseInt(document.getElementById('move5').style.left) > '2000' ){
@@ -431,10 +478,14 @@ if(parseInt(document.getElementById('move5').style.left) < '500' ){
 
 
 
+}
 
 document.getElementById('move5').style.left = parseInt(document.getElementById('move5').style.left)+document.mySpeedX5+'px'
 
 
+
+
+if (myDead6True){
 
 if(parseInt(document.getElementById('move6').style.left) > '2000' ){
 
@@ -451,8 +502,11 @@ if(parseInt(document.getElementById('move6').style.left) < '500' ){
 
 
 
+}
+
 
 document.getElementById('move6').style.left = parseInt(document.getElementById('move6').style.left)+document.mySpeedX6+'px'
+
 
 
 
@@ -463,11 +517,6 @@ if(parseInt(document.getElementById('move7').style.left) > '2000' ){
               }
 
 
-if(parseInt(document.getElementById('move7').style.left) < '500' ){
-
-    document.mySpeedX7 += 1
-
-              }
 
 
 
@@ -480,6 +529,7 @@ if(parseInt(document.getElementById('move8').style.left) > '2000' ){
     document.mySpeedX8 += -1
 
               }
+
 
 
 if(parseInt(document.getElementById('move8').style.left) < '500' ){
@@ -672,13 +722,6 @@ if(parseInt(document.getElementById('move18').style.left) > '2000' ){
               }
 
 
-if(parseInt(document.getElementById('move18').style.left) < '500' ){
-
-    document.mySpeedX18 += 1
-
-              }
-
-
 
 
 document.getElementById('move18').style.left = parseInt(document.getElementById('move18').style.left)+document.mySpeedX18+'px'
@@ -689,14 +732,6 @@ if(parseInt(document.getElementById('move19').style.left) > '2000' ){
     document.mySpeedX19 += -1
 
               }
-
-
-if(parseInt(document.getElementById('move19').style.left) < '500' ){
-
-    document.mySpeedX19 += 1
-
-              }
-
 
 
 
@@ -943,7 +978,7 @@ Click to hide.
 
 <img id="move2" src="http://pixelartmaker.com/art/3d405f3e5b2fa3a.png" style="position:absolute; width:80px; height:50px; left:2000px; top:300px;"/>
 
-<img id="move3" src="http://pixelartmaker.com/art/3d405f3e5b2fa3a.png" style="position:absolute; width:80px; height:50px; left:2000px; top:470px;"/>
+<img id="move3" src="http://pixelartmaker.com/art/3d405f3e5b2fa3a.png" style="position:absolute; width:80px; height:50px; left:2000ddpx; top:470px;"/>
 
 <img id="move4" src="http://pixelartmaker.com/art/3d405f3e5b2fa3a.png" style="position:absolute; width:80px; height:50px; left:2000px; top:490px;"/>
 
@@ -973,7 +1008,7 @@ Click to hide.
 
 <img id="move7" src="http://pixelartmaker.com/art/68ad85e4fab6e54.png" style="position:absolute; width:798px; height:397px; left:2000px; top:20px;"/>
 
-<img id="move18" src="http://pixelartmaker.com/art/68ad85e4fab6e54.png" style="position:absolute; width:798px; height:397px; left:2000px; top:390px;"/>
+<img id="move18" src="http://pixelartmaker.com/art/68ad85e4fab6e54.png" style="position:absolute; width:798px; height:397px; left:2000px; top:190px;"/>
 
 <img id="move19" src="http://pixelartmaker.com/art/68ad85e4fab6e54.png" style="position:absolute; width:798px; height:397px; left:2000px; top:400px;"/>
 
