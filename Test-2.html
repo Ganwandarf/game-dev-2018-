@@ -30,6 +30,7 @@ function myScroll() {
 
 myAuto()
 
+
 checkAll()
 
 myBgPosY += myBgSpeedYdown;
@@ -55,9 +56,6 @@ myBgObject.style.backgroundPosition = myBgPosX+" " + myBgPosY;
 Score = 0
 
 Lifepoints = 10
-
-
-
 
 function myHitXY(my1,X,Y){
 
@@ -117,7 +115,6 @@ return true
 
 }
 
-
 // Group all your detection code here
 
 function checkAll(){
@@ -128,11 +125,13 @@ document.getElementById('myShowDiv3').innerHTML = 'You hit the red dot'
 
 } else {document.getElementById('myShowDiv3').innerHTML = ''}
 
+
 if (myHitOther('move1','move2')) {
 
 document.getElementById('myShowDiv3').innerHTML = 'You hit object move2'
 
 }
+
 
 if (myHitOther('move1','move3')) {
 
@@ -159,9 +158,7 @@ if (myHitOther('move1','move6')) {
 
 document.getElementById('myShowDiv3').innerHTML = 'You hit object move6'
 
-
 }
-
 
 
 if (myHitOther('move2','move1')) {
@@ -171,6 +168,7 @@ document.getElementById('move1').style.visibility = 'hidden'
 document.getElementById('move1').style.left = '-200px'
 
 }
+
 
 if (myHitOther('move3','move1')) {
 
@@ -205,8 +203,8 @@ document.getElementById('move1').style.visibility = 'hidden'
 
 document.getElementById('move1').style.left = '-200px'
 
-
 }
+
 
 if (myHitOther('bullet1','move2')) {
 
@@ -227,6 +225,7 @@ document.getElementById('move2').style.left = '-9000px'
 clearInterval(document.myShot)
 
 }
+
 
 if (myHitOther('bullet1','move3')) {
 
@@ -291,6 +290,7 @@ clearInterval(document.myShot)
 }
 
 
+
 if (myHitOther('bullet1','move6')) {
 
 document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 6'
@@ -309,9 +309,8 @@ document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
 
-
-
 }
+
 
 if (myHitOther('bullet1','move7')) {
 
@@ -323,7 +322,232 @@ document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
 
+}
 
+
+if (myHitOther('bullet1','move8')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 8'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move8').style.visibility = 'hidden'
+
+document.getElementById('move8').style.left = '-9000px'
+
+myDead8True = false
+
+document.mySpeedX8 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move9')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 9'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move9').style.visibility = 'hidden'
+
+document.getElementById('move9').style.left = '-9000px'
+
+myDead9True = false
+
+document.mySpeedX9 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move10')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 10'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move10').style.visibility = 'hidden'
+
+document.getElementById('move10').style.left = '-9000px'
+
+myDead10True = false
+
+document.mySpeedX10 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move11')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 11'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move11').style.visibility = 'hidden'
+
+document.getElementById('move11').style.left = '-9000px'
+
+myDead11True = false
+
+document.mySpeedX11 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move12')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 12'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move12').style.visibility = 'hidden'
+
+document.getElementById('move12').style.left = '-9000px'
+
+myDead12True = false
+
+document.mySpeedX12 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move13')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 13'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move13').style.visibility = 'hidden'
+
+document.getElementById('move13').style.left = '-9000px'
+
+myDead13True = false
+
+document.mySpeedX13 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move14')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 14'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move14').style.visibility = 'hidden'
+
+document.getElementById('move14').style.left = '-9000px'
+
+myDead14True = false
+
+document.mySpeedX14 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move15')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 15'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move15').style.visibility = 'hidden'
+
+document.getElementById('move15').style.left = '-9000px'
+
+myDead15True = false
+
+document.mySpeedX15 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move16')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 16'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move16').style.visibility = 'hidden'
+
+document.getElementById('move16').style.left = '-9000px'
+
+myDead16True = false
+
+document.mySpeedX16 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+if (myHitOther('bullet1','move17')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 17'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+//document.getElementById('move17').style.visibility = 'hidden'
+
+document.getElementById('move17').style.left = '-9000px'
+
+myDead17True = false
+
+document.mySpeedX17 = 0
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+
+if (myHitOther('bullet1','move18')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 18'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
+
+}
+
+
+if (myHitOther('bullet1','move19')) {
+
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 19'
+
+document.getElementById('bullet1').style.visibility = 'hidden'
+
+document.getElementById('bullet1').style.left = '900px'
+
+clearInterval(document.myShot)
 
 }
 
@@ -331,13 +555,7 @@ clearInterval(document.myShot)
 
 // ******************** Object Detection finished ************************** -->
 
-
 // ******************** Object Motion Below ************************** -->
-
-
-
-
-
 
 document.mySpeedX2 = 10;
 
@@ -375,7 +593,6 @@ document.mySpeedX18 = 5;
 
 document.mySpeedX19 = 3;
 
-
 myDead2True = true
 
 myDead3True = true
@@ -386,77 +603,92 @@ myDead5True = true
 
 myDead6True = true
 
+myDead7True = true
 
+myDead8True = true
+
+myDead9True = true
+
+myDead10True = true
+
+myDead11True = true
+
+myDead12True = true
+
+myDead13True = true
+
+myDead14True = true
+
+myDead15True = true
+
+myDead16True = true
+
+myDead17True = true
 
 function myAuto(){
 
 
 if (myDead2True){
 
+
 if(parseInt(document.getElementById('move2').style.left) > '2000' ){
-
     document.mySpeedX2 += -1
-
+              
               }
 
 
 if(parseInt(document.getElementById('move2').style.left) < '300' ){
-
     document.mySpeedX2 += 1
-
+              
               }
 
 
 }
+
 
 document.getElementById('move2').style.left = parseInt(document.getElementById('move2').style.left)+document.mySpeedX2+'px'
 
 
-
-
 if (myDead3True){
 
+
 if(parseInt(document.getElementById('move3').style.left) > '2000' ){
-
     document.mySpeedX3 += -1
-
+              
               }
 
 
 if(parseInt(document.getElementById('move3').style.left) < '300' ){
-
     document.mySpeedX3 += 1
-
+              
               }
 
+
 }
+
 
 document.getElementById('move3').style.left = parseInt(document.getElementById('move3').style.left)+document.mySpeedX3+'px'
 
 
-
-
 if (myDead4True){
 
+
 if(parseInt(document.getElementById('move4').style.left) > '2000' ){
-
     document.mySpeedX4 += -1
-
+              
               }
 
 
 if(parseInt(document.getElementById('move4').style.left) < '500' ){
-
     document.mySpeedX4 += 1
-
+              
               }
-
 
 
 }
 
-document.getElementById('move4').style.left = parseInt(document.getElementById('move4').style.left)+document.mySpeedX4+'px'
 
+document.getElementById('move4').style.left = parseInt(document.getElementById('move4').style.left)+document.mySpeedX4+'px'
 
 
 
@@ -464,435 +696,382 @@ if (myDead5True){
 
 
 if(parseInt(document.getElementById('move5').style.left) > '2000' ){
-
     document.mySpeedX5 += -1
-
+              
               }
 
 
 if(parseInt(document.getElementById('move5').style.left) < '500' ){
-
     document.mySpeedX5 += 1
-
+              
               }
 
 
-
 }
+
 
 document.getElementById('move5').style.left = parseInt(document.getElementById('move5').style.left)+document.mySpeedX5+'px'
 
 
-
-
 if (myDead6True){
 
+
 if(parseInt(document.getElementById('move6').style.left) > '2000' ){
-
     document.mySpeedX6 += -1
-
+              
               }
 
 
 if(parseInt(document.getElementById('move6').style.left) < '500' ){
-
     document.mySpeedX6 += 1
+              
 
               }
 
 
-
 }
+
 
 
 document.getElementById('move6').style.left = parseInt(document.getElementById('move6').style.left)+document.mySpeedX6+'px'
 
 
-
+if (myDead7True){
 
 if(parseInt(document.getElementById('move7').style.left) > '2000' ){
-
-    document.mySpeedX7 += -1
-
+    
+document.mySpeedX7 += -1
+              
               }
 
 
 
-
-
+}
 
 document.getElementById('move7').style.left = parseInt(document.getElementById('move7').style.left)+document.mySpeedX7+'px'
 
 
+if (myDead8True){
+
 if(parseInt(document.getElementById('move8').style.left) > '2000' ){
-
-    document.mySpeedX8 += -1
-
+    
+document.mySpeedX8 += -1
+              
               }
-
 
 
 if(parseInt(document.getElementById('move8').style.left) < '500' ){
-
-    document.mySpeedX8 += 1
-
+    
+document.mySpeedX8 += 1
+              
               }
 
 
+
+}
 
 
 document.getElementById('move8').style.left = parseInt(document.getElementById('move8').style.left)+document.mySpeedX8+'px'
 
 
+if (myDead9True){
+
 if(parseInt(document.getElementById('move9').style.left) > '2000' ){
-
-    document.mySpeedX9 += -1
-
+    
+document.mySpeedX9 += -1
+              
               }
 
 
 if(parseInt(document.getElementById('move9').style.left) < '500' ){
-
-    document.mySpeedX9 += 1
-
+    
+document.mySpeedX9 += 1
+              
               }
 
 
+
+}
 
 
 document.getElementById('move9').style.left = parseInt(document.getElementById('move9').style.left)+document.mySpeedX9+'px'
 
 
+if (myDead10True){
+
 if(parseInt(document.getElementById('move10').style.left) > '2000' ){
-
-    document.mySpeedX10 += -1
-
+    
+document.mySpeedX10 += -1
+              
               }
 
 
 if(parseInt(document.getElementById('move10').style.left) < '500' ){
-
-    document.mySpeedX10 += 1
-
+    
+document.mySpeedX10 += 1
+              
               }
 
 
+
+}
 
 
 document.getElementById('move10').style.left = parseInt(document.getElementById('move10').style.left)+document.mySpeedX10+'px'
 
 
+if (myDead11True){
+
 if(parseInt(document.getElementById('move11').style.left) > '2000' ){
-
-    document.mySpeedX11 += -1
-
+    
+document.mySpeedX11 += -1
+              
               }
 
 
 if(parseInt(document.getElementById('move11').style.left) < '500' ){
-
-    document.mySpeedX11 += 1
-
+    
+document.mySpeedX11 += 1
+              
               }
 
 
 
+}
 
 document.getElementById('move11').style.left = parseInt(document.getElementById('move11').style.left)+document.mySpeedX11+'px'
 
 
+if (myDead12True){
+
 if(parseInt(document.getElementById('move12').style.left) > '2000' ){
-
-    document.mySpeedX12 += -1
-
+    
+document.mySpeedX12 += -1
+              
               }
 
 
 if(parseInt(document.getElementById('move12').style.left) < '500' ){
-
-    document.mySpeedX12 += 1
-
+    
+document.mySpeedX12 += 1
+              
               }
 
 
 
+}
 
 document.getElementById('move12').style.left = parseInt(document.getElementById('move12').style.left)+document.mySpeedX12+'px'
 
 
+if (myDead13True){
+
 if(parseInt(document.getElementById('move13').style.left) > '2000' ){
-
-    document.mySpeedX13 += -1
-
+    
+document.mySpeedX13 += -1
+              
               }
 
 
 if(parseInt(document.getElementById('move13').style.left) < '500' ){
-
-    document.mySpeedX13 += 1
-
+    
+document.mySpeedX13 += 1
+              
               }
 
 
 
+}
 
 document.getElementById('move13').style.left = parseInt(document.getElementById('move13').style.left)+document.mySpeedX13+'px'
 
 
-if(parseInt(document.getElementById('move14').style.left) > '2000' ){
+if (myDead14True){
 
-    document.mySpeedX14 += -1
+if(parseInt(document.getElementById('move14').style.left) > '2000' ){
+    
+document.mySpeedX14 += -1
               
               }
 
 
 if(parseInt(document.getElementById('move14').style.left) < '500' ){
-
-    document.mySpeedX14 += 1
-
+    
+document.mySpeedX14 += 1
+              
               }
 
 
+}
 
 
 document.getElementById('move14').style.left = parseInt(document.getElementById('move14').style.left)+document.mySpeedX14+'px'
 
 
-if(parseInt(document.getElementById('move15').style.left) > '2000' ){
+if (myDead15True){
 
-    document.mySpeedX15 += -1
+if(parseInt(document.getElementById('move15').style.left) > '2000' ){
+    
+document.mySpeedX15 += -1
+              
 
               }
 
 
 if(parseInt(document.getElementById('move15').style.left) < '500' ){
-
-    document.mySpeedX15 += 1
-
+    
+document.mySpeedX15 += 1
+              
               }
 
 
-
+}
 
 document.getElementById('move15').style.left = parseInt(document.getElementById('move15').style.left)+document.mySpeedX15+'px'
 
 
+if (myDead16True){
+
 if(parseInt(document.getElementById('move16').style.left) > '2000' ){
-
-    document.mySpeedX16 += -1
-
+    
+document.mySpeedX16 += -1
+              
               }
 
 
 if(parseInt(document.getElementById('move16').style.left) < '500' ){
-
-    document.mySpeedX16 += 1
+    
+document.mySpeedX16 += 1
+              
 
               }
 
 
-
+}
 
 document.getElementById('move16').style.left = parseInt(document.getElementById('move16').style.left)+document.mySpeedX16+'px'
 
 
-if(parseInt(document.getElementById('move17').style.left) > '2000' ){
+if (myDead17True){
 
-    document.mySpeedX17 += -1
+if(parseInt(document.getElementById('move17').style.left) > '2000' ){
+    
+document.mySpeedX17 += -1
+             
 
               }
 
 
 if(parseInt(document.getElementById('move17').style.left) < '500' ){
-
-    document.mySpeedX17 += 1
-
+    
+document.mySpeedX17 += 1
+              
               }
 
 
-
+}
 
 document.getElementById('move17').style.left = parseInt(document.getElementById('move17').style.left)+document.mySpeedX17+'px'
 
 
+
 if(parseInt(document.getElementById('move18').style.left) > '2000' ){
-
-    document.mySpeedX18 += -1
-
+    
+document.mySpeedX18 += -1
+              
               }
-
-
-
 
 document.getElementById('move18').style.left = parseInt(document.getElementById('move18').style.left)+document.mySpeedX18+'px'
 
-
 if(parseInt(document.getElementById('move19').style.left) > '2000' ){
-
-    document.mySpeedX19 += -1
-
+    
+document.mySpeedX19 += -1
+              
               }
 
-
-
 document.getElementById('move19').style.left = parseInt(document.getElementById('move19').style.left)+document.mySpeedX19+'px'
-
               
 
 
 
+
 //folowing code showes where move 2 and move3, move4 etc are located
-
 document.getElementById('myShowDiv1').innerHTML = 'move1 x='+parseInt(document.getElementById('move1').style.left) +
-
 ', y='+parseInt(document.getElementById('move1').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move2 x='+parseInt(document.getElementById('move2').style.left) +
-
 ', y='+parseInt(document.getElementById('move2').style.top) +
-
 '<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top) +
-
 '<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move3 x='+parseInt(document.getElementById('move3').style.left) +
-
 ', y='+parseInt(document.getElementById('move3').style.top) +
-
 '<br> move3 x='+parseInt(document.getElementById('move3').style.left) +', y='+parseInt(document.getElementById('move3').style.top) +
-
 '<br> move3 x='+parseInt(document.getElementById('move3').style.left) +', y='+parseInt(document.getElementById('move3').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move4 x='+parseInt(document.getElementById('move4').style.left) +
-
 ', y='+parseInt(document.getElementById('move4').style.top) +
-
 '<br> move4 x='+parseInt(document.getElementById('move4').style.left) +', y='+parseInt(document.getElementById('move4').style.top) +
-
 '<br> move4 x='+parseInt(document.getElementById('move4').style.left) +', y='+parseInt(document.getElementById('move4').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move5 x='+parseInt(document.getElementById('move5').style.left) +
-
 ', y='+parseInt(document.getElementById('move5').style.top) +
-
 '<br> move5 x='+parseInt(document.getElementById('move5').style.left) +', y='+parseInt(document.getElementById('move5').style.top) +
-
 '<br> move5 x='+parseInt(document.getElementById('move5').style.left) +', y='+parseInt(document.getElementById('move5').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move6 x='+parseInt(document.getElementById('move6').style.left) +
-
 ', y='+parseInt(document.getElementById('move6').style.top) +
-
 '<br> move6 x='+parseInt(document.getElementById('move6').style.left) +', y='+parseInt(document.getElementById('move6').style.top) +
-
 '<br> move6 x='+parseInt(document.getElementById('move6').style.left) +', y='+parseInt(document.getElementById('move6').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move7 x='+parseInt(document.getElementById('move7').style.left) +
-
 ', y='+parseInt(document.getElementById('move7').style.top) +
-
 '<br> move7 x='+parseInt(document.getElementById('move7').style.left) +', y='+parseInt(document.getElementById('move7').style.top) +
-
 '<br> move7 x='+parseInt(document.getElementById('move7').style.left) +', y='+parseInt(document.getElementById('move7').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move8 x='+parseInt(document.getElementById('move8').style.left) +
-
 ', y='+parseInt(document.getElementById('move8').style.top) +
-
 '<br> move8 x='+parseInt(document.getElementById('move8').style.left) +', y='+parseInt(document.getElementById('move8').style.top) +
-
 '<br> move8 x='+parseInt(document.getElementById('move8').style.left) +', y='+parseInt(document.getElementById('move8').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move9 x='+parseInt(document.getElementById('move9').style.left) +
-
 ', y='+parseInt(document.getElementById('move9').style.top) +
-
 '<br> move9 x='+parseInt(document.getElementById('move9').style.left) +', y='+parseInt(document.getElementById('move9').style.top) +
-
 '<br> move9 x='+parseInt(document.getElementById('move9').style.left) +', y='+parseInt(document.getElementById('move9').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move10 x='+parseInt(document.getElementById('move10').style.left) +
-
 ', y='+parseInt(document.getElementById('move10').style.top) +
-
 '<br> move10 x='+parseInt(document.getElementById('move10').style.left) +', y='+parseInt(document.getElementById('move10').style.top) +
-
 '<br> move10 x='+parseInt(document.getElementById('move10').style.left) +', y='+parseInt(document.getElementById('move10').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move11 x='+parseInt(document.getElementById('move11').style.left) +
-
 ', y='+parseInt(document.getElementById('move11').style.top) +
-
 '<br> move11 x='+parseInt(document.getElementById('move11').style.left) +', y='+parseInt(document.getElementById('move11').style.top) +
-
 '<br> move11 x='+parseInt(document.getElementById('move11').style.left) +', y='+parseInt(document.getElementById('move11').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move12 x='+parseInt(document.getElementById('move12').style.left) +
-
 ', y='+parseInt(document.getElementById('move12').style.top) +
-
 '<br> move12 x='+parseInt(document.getElementById('move12').style.left) +', y='+parseInt(document.getElementById('move12').style.top) +
-
 '<br> move12 x='+parseInt(document.getElementById('move12').style.left) +', y='+parseInt(document.getElementById('move12').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move13 x='+parseInt(document.getElementById('move13').style.left) +
-
 ', y='+parseInt(document.getElementById('move13').style.top) +
-
 '<br> move13 x='+parseInt(document.getElementById('move13').style.left) +', y='+parseInt(document.getElementById('move13').style.top) +
-
 '<br> move13 x='+parseInt(document.getElementById('move13').style.left) +', y='+parseInt(document.getElementById('move13').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move14 x='+parseInt(document.getElementById('move14').style.left) +
-
 ', y='+parseInt(document.getElementById('move14').style.top) +
-
 '<br> move14 x='+parseInt(document.getElementById('move14').style.left) +', y='+parseInt(document.getElementById('move14').style.top) +
-
 '<br> move14 x='+parseInt(document.getElementById('move14').style.left) +', y='+parseInt(document.getElementById('move14').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move15 x='+parseInt(document.getElementById('move15').style.left) +
-
 ', y='+parseInt(document.getElementById('move15').style.top) +
-
 '<br> move15 x='+parseInt(document.getElementById('move15').style.left) +', y='+parseInt(document.getElementById('move15').style.top) +
-
 '<br> move15 x='+parseInt(document.getElementById('move15').style.left) +', y='+parseInt(document.getElementById('move15').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move16 x='+parseInt(document.getElementById('move16').style.left) +
-
 ', y='+parseInt(document.getElementById('move16').style.top) +
-
 '<br> move16 x='+parseInt(document.getElementById('move16').style.left) +', y='+parseInt(document.getElementById('move16').style.top) +
-
 '<br> move16 x='+parseInt(document.getElementById('move16').style.left) +', y='+parseInt(document.getElementById('move16').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move17 x='+parseInt(document.getElementById('move17').style.left) +
-
 ', y='+parseInt(document.getElementById('move17').style.top) +
-
 '<br> move17 x='+parseInt(document.getElementById('move17').style.left) +', y='+parseInt(document.getElementById('move17').style.top) +
-
 '<br> move17 x='+parseInt(document.getElementById('move17').style.left) +', y='+parseInt(document.getElementById('move17').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move18 x='+parseInt(document.getElementById('move18').style.left) +
-
 ', y='+parseInt(document.getElementById('move18').style.top) +
-
 '<br> move18 x='+parseInt(document.getElementById('move18').style.left) +', y='+parseInt(document.getElementById('move18').style.top) +
-
 '<br> move18 x='+parseInt(document.getElementById('move18').style.left) +', y='+parseInt(document.getElementById('move18').style.top)
-
 document.getElementById('myShowDiv2').innerHTML = 'move19 x='+parseInt(document.getElementById('move7').style.left) +
-
 ', y='+parseInt(document.getElementById('move19').style.top) +
-
 '<br> move19 x='+parseInt(document.getElementById('move19').style.left) +', y='+parseInt(document.getElementById('move19').style.top) +
-
 '<br> move19 x='+parseInt(document.getElementById('move19').style.left) +', y='+parseInt(document.getElementById('move19').style.top)
 
 }
-
 
 
 function myGunPrep(){
@@ -914,7 +1093,6 @@ function myGun(){
 document.getElementById('bullet1').style.left = parseInt(document.getElementById('bullet1').style.left) + 20 + 'px'
 
 }
-
 </script>
 
 </head>
@@ -924,24 +1102,15 @@ document.getElementById('bullet1').style.left = parseInt(document.getElementById
 <!-- ******************** onkeypress just for webpages is useless on mobile apps ************************** -->
 
 <body background="https://static.tumblr.com/5fe0a3dccdfb27e8a314b5c3be3c63fc/q7m50bx/SLinrnkhc/tumblr_static_tumblr_static_d0jp4vodzcgsg4ogwkcs80kcc_640.jpg" onload="myTimer = setInterval('myScroll()', 100)" onkeydown="{
-
 if(event.keyCode==65){ document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left)-5+'px'} // small 'a' key go left
-
 if(event.keyCode==87){ document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top)-5+'px'} // small 'w' key go up
-
 if(event.keyCode==68){ document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left)+5+'px'} // small 'd' key go right
-
 if(event.keyCode==83){ document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top)+5+'px'} // small 's' key go down
-
 if(event.keyCode==32){myGunPrep()}//space to shoot
-
-
 }">
 
 <script> // This object must be after the body tag
-
 myBgObject = eval('document.body');
-
 </script>
 
 <h2 align=center style="background-color:yellow"> Game Base by Cody</h2>
@@ -951,7 +1120,6 @@ myBgObject = eval('document.body');
 <div id="myInstructions" style="visibility:visible; width:500px; background-color:yellow" onclick="{
 
 document.getElementById('myInstructions').style.visibility = 'hidden'}
-
 ">
 
 <ol>Instructions here:
@@ -1015,25 +1183,18 @@ Click to hide.
 <img id="bullet1" src="http://pixelartmaker.com/art/16828dd2fc486c8.png" style="position:absolute; width:20px; height:20px; left:-600px; top:450px; visibility:hidden"/>
 
 <!-- ******************** Now all the buttons.
-
 Note: ontouchstart is faster than onclick but only works on touch screens or mobile ************************** -->
 
 
 
 <input type=button value="Step Down Move2" onclick="{
-
 document.getElementById('move2').style.top = parseInt(document.getElementById('move2').style.top)+5+'px'
-
 checkAll()
-
 }">
 
 <input type=button value="touch event Right" ontouchstart="{
-
 document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left)+5+'px'
-
 checkAll()
-
 }">
 
 
