@@ -1,5 +1,3 @@
- 
-
 <html>
 
 <head>
@@ -9,6 +7,11 @@
 <script>
 
 //Global variables here
+
+
+
+myScore = 0
+
 
 myBgPosY = 0; // present vertical position
 
@@ -29,7 +32,6 @@ myBgSpeedXleft = 4; // speed moving right
 function myScroll() {
 
 myAuto()
-
 
 checkAll()
 
@@ -52,10 +54,6 @@ myBgObject.style.backgroundPosition = myBgPosX+" " + myBgPosY;
 // ******************** Object Detection Starts below ************************** -->
 
 // myHitXY function determines if any object has hit an x, y location. Note it is better to use the myHitOther function
-
-Score = 0
-
-Lifepoints = 10
 
 function myHitXY(my1,X,Y){
 
@@ -163,14 +161,19 @@ document.getElementById('myShowDiv3').innerHTML = 'You hit object move6'
 
 if (myHitOther('move2','move1')) {
 
+alert('You are dead. Reload the page')
+
 document.getElementById('move1').style.visibility = 'hidden'
 
 document.getElementById('move1').style.left = '-200px'
+
 
 }
 
 
 if (myHitOther('move3','move1')) {
+
+alert('You are dead. Reload the page')
 
 document.getElementById('move1').style.visibility = 'hidden'
 
@@ -180,6 +183,8 @@ document.getElementById('move1').style.left = '-200px'
 
 
 if (myHitOther('move4','move1')) {
+
+alert('You are dead. Reload the page')
 
 document.getElementById('move1').style.visibility = 'hidden'
 
@@ -199,11 +204,146 @@ document.getElementById('move1').style.left = '-200px'
 
 if (myHitOther('move6','move1')) {
 
+alert('You are dead. Reload the page')
+
 document.getElementById('move1').style.visibility = 'hidden'
 
 document.getElementById('move1').style.left = '-200px'
 
 }
+
+
+if (myHitOther('move7','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move8','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move9','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move10','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move11','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move12','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move13','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move14','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move15','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move16','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move17','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move18','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+if (myHitOther('move19','move1')) {
+
+alert('You are dead. Reload the page')
+
+document.getElementById('move1').style.visibility = 'hidden'
+
+document.getElementById('move1').style.left = '-200px'
+
+}
+
+
 
 
 if (myHitOther('bullet1','move2')) {
@@ -223,6 +363,8 @@ document.mySpeedX2 = 0
 document.getElementById('move2').style.left = '-9000px'
 
 clearInterval(document.myShot)
+
+myScore += 1
 
 }
 
@@ -245,6 +387,8 @@ document.mySpeedX3 = 0
 
 clearInterval(document.myShot)
 
+myScore += 1
+
 }
 
 
@@ -265,6 +409,8 @@ document.mySpeedX4 = 0
 document.getElementById('move4').style.left = '-9000px'
 
 clearInterval(document.myShot)
+
+myScore += 1
 
 }
 
@@ -287,6 +433,8 @@ document.getElementById('move5').style.left = '-9000px'
 
 clearInterval(document.myShot)
 
+myScore += 1
+
 }
 
 
@@ -308,6 +456,8 @@ document.mySpeedX6 = 0
 document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
+
+myScore += 1
 
 }
 
@@ -343,6 +493,8 @@ document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
 
+myScore += 1
+
 }
 
 if (myHitOther('bullet1','move9')) {
@@ -362,6 +514,8 @@ document.mySpeedX9 = 0
 document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
+
+myScore += 1
 
 }
 
@@ -383,6 +537,8 @@ document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
 
+myScore += 1
+
 }
 
 if (myHitOther('bullet1','move11')) {
@@ -402,6 +558,8 @@ document.mySpeedX11 = 0
 document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
+
+myScore += 1
 
 }
 
@@ -423,6 +581,8 @@ document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
 
+myScore += 1
+
 }
 
 if (myHitOther('bullet1','move13')) {
@@ -442,6 +602,8 @@ document.mySpeedX13 = 0
 document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
+
+myScore += 1
 
 }
 
@@ -463,6 +625,8 @@ document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
 
+myScore += 1
+
 }
 
 if (myHitOther('bullet1','move15')) {
@@ -482,6 +646,8 @@ document.mySpeedX15 = 0
 document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
+
+myScore += 1
 
 }
 
@@ -503,6 +669,8 @@ document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
 
+myScore += 1
+
 }
 
 if (myHitOther('bullet1','move17')) {
@@ -522,6 +690,8 @@ document.mySpeedX17 = 0
 document.getElementById('bullet1').style.left = '900px'
 
 clearInterval(document.myShot)
+
+myScore += 1
 
 }
 
@@ -550,6 +720,19 @@ document.getElementById('bullet1').style.left = '900px'
 clearInterval(document.myShot)
 
 }
+
+if(myScore >= 10){
+//alert('You Win')
+
+document.getElementById('myShowDiv1').innerHTML = 'You Beat The Empire Back, On to the Next Fight!'
+
+location = 'https://www.google.ca/?safe=active&ssui=on'
+
+}
+
+document.getElementById('myShowDiv1').innerHTML = myScore
+
+
 
 }
 
@@ -1182,19 +1365,26 @@ Click to hide.
 
 <img id="bullet1" src="http://pixelartmaker.com/art/16828dd2fc486c8.png" style="position:absolute; width:20px; height:20px; left:-600px; top:450px; visibility:hidden"/>
 
-<!-- ******************** Now all the buttons.
-Note: ontouchstart is faster than onclick but only works on touch screens or mobile ************************** -->
-
+<!-- ******************** Now all the buttons.Note: ontouchstart is faster than onclick but only works on touch screens or mobile ************************** -->
 
 
 <input type=button value="Step Down Move2" onclick="{
+
 document.getElementById('move2').style.top = parseInt(document.getElementById('move2').style.top)+5+'px'
+
 checkAll()
+
+
 }">
 
+
 <input type=button value="touch event Right" ontouchstart="{
+
 document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left)+5+'px'
+
 checkAll()
+
+
 }">
 
 
@@ -1251,6 +1441,5 @@ document.mySpeedX19 += -1
 </body>
 
 </html>
-
 
 
