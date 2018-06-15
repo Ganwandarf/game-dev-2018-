@@ -133,13 +133,6 @@ document.getElementById('myShowDiv3').innerHTML = 'You hit object move2'
 }
 
 
-if (myHitOther('move1','move3')) {
-
-document.getElementById('myShowDiv3').innerHTML = 'You hit object move3'
-
-}
-
-
 if (myHitOther('move1','move4')) {
 
 document.getElementById('myShowDiv3').innerHTML = 'You hit object move4'
@@ -175,19 +168,6 @@ if (myHitOther('move2','move1')) {
 
 myHealth += -1
 
-
-}
-
-
-if (myHitOther('move3','move1')) {
-
-//alert('You are dead. Reload the page')
-
-//document.getElementById('move1').style.visibility = 'hidden'
-
-//document.getElementById('move1').style.left = '-200px'
-
-myHealth += -1
 
 }
 
@@ -413,28 +393,6 @@ myScore += 1
 
 }
 
-
-if (myHitOther('bullet1','move3')) {
-
-document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 3'
-
-document.getElementById('bullet1').style.visibility = 'hidden'
-
-document.getElementById('bullet1').style.left = '-900px'
-
-//document.getElementById('move3').style.visibility = 'hidden'
-
-document.getElementById('move3').style.left = '-9000px'
-
-myDead3True = false
-
-document.mySpeedX3 = 0
-
-clearInterval(document.myShot)
-
-myScore += 1
-
-}
 
 
 if (myHitOther('bullet1','move4')) {
@@ -766,7 +724,7 @@ clearInterval(document.myShot)
 
 }
 
-if(myScore >= 5){
+if(myScore >= 10){
 //alert('You Win')
 
 document.getElementById('myShowDiv1').innerHTML = 'You Beat The Empire Back, On to the Next Fight!'
@@ -776,7 +734,7 @@ location = 'https://ganwandarf.github.io/game-dev-2018-/con4/'
 }
 
 if(myHealth <= 0){
-alert('You Lose')
+//alert('You Lose')
 
 document.getElementById('myShowDiv3').innerHTML = 'Good Try Rebel Scum!'
 
@@ -798,8 +756,6 @@ document.getElementById('myShowDiv2').innerHTML = myHealth
 // ******************** Object Motion Below ************************** -->
 
 document.mySpeedX2 = 10;
-
-document.mySpeedX3 = 20;
 
 document.mySpeedX4 = 1;
 
@@ -834,8 +790,6 @@ document.mySpeedX18 = 5;
 document.mySpeedX19 = 3;
 
 myDead2True = true
-
-myDead3True = true
 
 myDead4True = true
 
@@ -887,27 +841,6 @@ if(parseInt(document.getElementById('move2').style.left) < '300' ){
 
 
 document.getElementById('move2').style.left = parseInt(document.getElementById('move2').style.left)+document.mySpeedX2+'px'
-
-
-if (myDead3True){
-
-
-if(parseInt(document.getElementById('move3').style.left) > '2000' ){
-    document.mySpeedX3 += -1
-              
-              }
-
-
-if(parseInt(document.getElementById('move3').style.left) < '300' ){
-    document.mySpeedX3 += 1
-              
-              }
-
-
-}
-
-
-document.getElementById('move3').style.left = parseInt(document.getElementById('move3').style.left)+document.mySpeedX3+'px'
 
 
 if (myDead4True){
@@ -1242,10 +1175,6 @@ document.getElementById('myShowDiv2').innerHTML = 'move2 x='+parseInt(document.g
 ', y='+parseInt(document.getElementById('move2').style.top) +
 '<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top) +
 '<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top)
-document.getElementById('myShowDiv2').innerHTML = 'move3 x='+parseInt(document.getElementById('move3').style.left) +
-', y='+parseInt(document.getElementById('move3').style.top) +
-'<br> move3 x='+parseInt(document.getElementById('move3').style.left) +', y='+parseInt(document.getElementById('move3').style.top) +
-'<br> move3 x='+parseInt(document.getElementById('move3').style.left) +', y='+parseInt(document.getElementById('move3').style.top)
 document.getElementById('myShowDiv2').innerHTML = 'move4 x='+parseInt(document.getElementById('move4').style.left) +
 ', y='+parseInt(document.getElementById('move4').style.top) +
 '<br> move4 x='+parseInt(document.getElementById('move4').style.left) +', y='+parseInt(document.getElementById('move4').style.top) +
@@ -1386,8 +1315,6 @@ Click to hide.
 
 <img id="move2" src="http://pixelartmaker.com/art/3d405f3e5b2fa3a.png" style="position:absolute; width:80px; height:50px; left:2000px; top:300px;"/>
 
-<img id="move3" src="http://pixelartmaker.com/art/3d405f3e5b2fa3a.png" style="position:absolute; width:80px; height:50px; left:2000ddpx; top:470px;"/>
-
 <img id="move4" src="http://pixelartmaker.com/art/3d405f3e5b2fa3a.png" style="position:absolute; width:80px; height:50px; left:2000px; top:490px;"/>
 
 <img id="move5" src="http://pixelartmaker.com/art/3d405f3e5b2fa3a.png" style="position:absolute; width:80px; height:50px; left:2000px; top:500px;"/>
@@ -1448,8 +1375,6 @@ checkAll()
 <input type=button value="Auto Left" onClick="{
 
 document.mySpeedX2 += -1
-
-document.mySpeedX3 += -1
 
 document.mySpeedX4 += -1
 
